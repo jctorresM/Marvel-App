@@ -11,13 +11,22 @@
 */
 .navbar {
   overflow: hidden;
-  background-color: #444;
+  background-color: black;
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  -webkit-box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.44);
+  -moz-box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.44);
+  box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.44);
+}
+
+#marvel-icon {
+  position: fixed;
+  right: 6px;
+  top: 6px;
 }
 
 .navbar a {
@@ -448,24 +457,30 @@
     padding-bottom: 50px;
     max-width: 70rem;
     margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: white;
+    color: black;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 4px 14px 4px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 4px 14px 4px rgba(0,0,0,0.44);
+    box-shadow: 0px 4px 14px 4px rgba(0,0,0,0.44);
 }
 
 .character section,
 .comic section,
 .story section {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .character-header,
 .comic-header,
 .story-header {
-    padding-top: 60px;
+    padding-top: 30px;
     margin: 0 auto;
 }
 
@@ -499,14 +514,7 @@
  .stories-container a, 
  .characters-container a{
      margin: 0.1em;
-     color: white;
  }
-
- .comics-container a:visited, 
- .stories-container a:visited,
- .characters-container a:visited {
-    color:  #ccc !important;
-}
 
 .character ul,
 .comic ul, 
@@ -522,3 +530,8 @@
     padding-bottom: 3px;
 }
 
+.character-description h3, 
+.comic-description h3,
+.story-description h3 {
+  text-align: center;
+}

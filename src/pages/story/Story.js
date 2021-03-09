@@ -44,8 +44,7 @@ const Story = (props) => {
                     </figure>
                 </div>
                 <section className="story-description">
-                    <h3>{data.name}</h3>
-                    <p>{data.description}</p>
+                    <h3>{data.title}</h3>
                 </section>
                 {data.stories &&
                     <section >

@@ -44,6 +44,7 @@ const Character = (props) => {
                 </div>
                 <section className="character-description">
                     <h3>{data.name}</h3>
+                    <h4>Description</h4>
                     <p>{data.description}</p>
                 </section>
                 {data.stories &&

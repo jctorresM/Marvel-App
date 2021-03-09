@@ -11,6 +11,7 @@ const Menu = () => {
             <a onClick={() => {
                 history.push(`/favorites`);
             }}>Favorites</a>
+            <img id='marvel-icon' src='/marvel-icon.png'></img>
         </div>
     )
 }
