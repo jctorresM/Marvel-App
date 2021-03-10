@@ -151,13 +151,13 @@
   padding: 50px 15px 15px 15px;
 }
 
-.favorite-container .title, .favorite-container p {
+.favorite-container {
   color: #efefef;
 }
 
-.favorite-container .title {
+.title {
   font-size: 2.4rem;
-  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 } 
 
 /*
