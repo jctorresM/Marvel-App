@@ -36,6 +36,7 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 17px;
+  font-weight: 700;
 }
 
 .navbar a:hover {
@@ -147,11 +148,16 @@
 .favorite-container { 
   max-width: 85rem;
   margin: 0 auto;
-  padding: 50px 15px 15px 20px;
+  padding: 50px 15px 15px 15px;
 }
 
 .favorite-container .title, .favorite-container p {
-  color: white;
+  color: #efefef;
+}
+
+.favorite-container .title {
+  font-size: 2.4rem;
+  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
 } 
 
 /*
@@ -226,25 +232,21 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 /*
 // ResultCard STYLES
 */
 .result-card {
-  flex: 1 0 48%;
+  flex: 0 0 48%;
   display: flex;
   flex-direction: column;
   align-items: inherit;
   background: #efefef;
   box-shadow: 0 1rem 2rem -0.3rem rgba(0, 0, 0, 0.5);
-  margin-right: 4%;
-  margin-bottom: 4%;
-  min-width: 200px;
-}
-
-.result-card:nth-child(2n) {
-  margin-right: 0;
+  justify-content: space-between;
+  margin-bottom: 1%;
 }
 
 .result-card__image {
@@ -294,16 +296,13 @@
 
 @media (min-width: 768px) {
   .result-card {
-    flex: 0 0 32%;
-    margin-right: 2%;
+    flex-basis: 32%;
   }
+}
 
-  .result-card:nth-child(2n) {
-    margin-right: 2%;
-  }
-
-  .result-card:nth-child(3n) {
-    margin-right: 0;
+@media (max-width: 500px) {
+  .result-card {
+    flex-basis: 100%;
   }
 }
 
